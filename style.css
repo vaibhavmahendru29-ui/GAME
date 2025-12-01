@@ -1,0 +1,29 @@
+:root{
+--bg: #0f1724;
+--panel:#071029;
+--accent:#22c1c3;
+--muted:#9aa4b2;
+--card:#0b1220;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,var(--bg),#061016);display:flex;align-items:center;justify-content:center}
+.wrap{display:grid;grid-template-columns:540px 260px;gap:20px;padding:28px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6);}
+.game{background:var(--card);padding:18px;border-radius:10px;display:flex;flex-direction:column;align-items:center}
+canvas{background:linear-gradient(180deg,#081223,#03101a);border-radius:6px;display:block}
+.hud{margin-top:12px;display:flex;gap:12px;width:100%;justify-content:space-between}
+.panel{background:var(--panel);padding:10px;border-radius:8px;min-width:100px;color:var(--muted)}
+.panel h3{margin:0;font-size:12px;color:#e6eef6}
+.panel p{margin:6px 0 0;font-weight:700;font-size:18px;color:var(--accent)}
+.controls-row{width:100%;display:flex;justify-content:space-between;align-items:flex-start;margin-top:12px}
+.controls{display:flex;flex-direction:column;gap:8px}
+.controls button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer}
+.controls button.primary{background:linear-gradient(90deg,var(--accent),#6df0e9);color:#042026;border:none}
+.right{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.14));padding:16px;border-radius:10px;min-width:220px}
+h1{font-size:16px;margin:0 0 8px;color:#fff}
+.small{margin:0;color:var(--muted);font-size:13px}
+.keys{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.key{background:#071827;padding:8px;border-radius:8px;color:var(--muted);font-size:13px}
+.mobile-controls{display:flex;gap:6px;margin-top:12px;justify-content:center}
+.mobile-controls button{padding:12px;border-radius:8px}
+footer{margin-top:12px;color:var(--muted);font-size:12px;text-align:center}
+@media (max-width:820px){.wrap{grid-template-columns:1fr;max-width:420px}}
